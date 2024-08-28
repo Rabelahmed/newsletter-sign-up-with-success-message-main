@@ -1,0 +1,103 @@
+*{
+    /* Primary */
+    --Tomato: hsl(4, 100%, 67%);
+    --Tomato-b: hsla(19, 100%, 67%);
+    --Tomato-c: hsl(4, 100%, 67%,0.4);
+    /* Neutral */
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+
+body{
+    background-color: var(--White);
+    color: var(--Dark-Slate-Grey);
+    font-size: 0.9rem;
+}
+
+
+
+.card ,.success{
+    background-color: var(--White);
+}
+
+.illustration{
+    width: 100%;
+}
+
+.copy-heading{
+    color:var(--Dark-Slate-Grey) ;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.copy-list{
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+
+label {
+    font-size: 0.8rem;
+    color: var(--Dark-Slate-Grey);
+    font-weight: 700;
+}
+.error{
+    font-size: 0.8rem;
+    text-align: right;
+    color: tomato;
+}
+
+input{
+    border: 1px var(--Grey) solid;
+    cursor: pointer;
+    outline: 1px var(--Grey);
+    color: var(--Dark-Slate-Grey);
+}
+
+.invalid-email{
+    background-color: var(--Tomato-c);
+    color: var(--Tomato);
+    border-color: var(--Tomato);
+}
+
+form button{
+    font-weight: 700;
+    border-radius: 0.5rem;
+    background-color: var(--Dark-Slate-Grey);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    background: linear-gradient(45deg,Tomato,var(--Tomato-b));
+    color:var(--White);
+    border: none;
+    padding: 1.1rem;
+}
+.success {
+    border: none;
+}
+
+.success h2{
+    font-size: 2.5rem;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-width:700px) {
+    body{
+        background-color: var(--Dark-Slate-Grey);
+        
+    }
+    footer{
+        color: white;
+    }    
+}

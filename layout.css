@@ -1,0 +1,139 @@
+*{
+    /* css reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.copy-list{
+    padding-left: 1.6rem;
+}
+
+.copy-list li{
+    padding: 0.2rem 0;
+}
+
+.copy-list li p{
+    vertical-align: -0.2em;
+    transform: translate(0.5em, -0.4em);
+}
+
+
+label {
+    padding-bottom: 0.5rem;
+}
+
+.label-error{
+    display: flex;
+    width: 100%;
+}
+
+.content-form input{
+    margin-bottom: 1rem;
+    padding: 0.8rem 0;
+    border-radius: 0.5rem;
+}
+form button{
+    padding: 1rem;
+}
+form *{
+    width: 100%;
+}
+
+
+input::placeholder{
+    padding-left: 1.5rem;
+}
+
+.success{
+    display: none;   
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.success img{
+    width: 15%;
+}
+
+.success h2{
+    padding: 1rem 0;
+}
+
+.success p{
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width:700px) {
+    .illustration{
+        width: 100%;
+    }
+
+    .content{
+        padding: 1.5rem 2rem;
+    }
+    
+    .copy-para , .content-form{
+        padding: 1.5rem 0;
+    }
+
+    .success{
+        min-height: 100vh;    
+    }
+
+    .success img{
+        margin-top: 6rem;
+    }
+
+    .success button{
+        margin-top: auto;
+    }
+    
+}
+
+@media screen and (min-width:700px) {
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .card{
+        border-radius: 1rem;
+        display: flex;
+        max-width: 45rem;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 1rem;
+    }
+    .content{
+        padding: 0 2.3rem;
+    }
+    
+
+    .copy-heading, .copy-para , .copy-list{
+        padding-bottom: 1rem;
+    }
+    
+    .success{
+        border-radius: 1rem;
+        width: 20rem;
+    }
+    
+    
+    footer{
+        margin-top: 2rem;
+        color: white;
+    }   
+
+}
+.show{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
